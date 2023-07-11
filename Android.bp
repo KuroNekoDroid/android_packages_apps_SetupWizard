@@ -15,7 +15,7 @@
 //
 
 android_app {
-    name: "LineageSetupWizard",
+    name: "KuroNekoSetupWizard",
 
     srcs: ["src/**/*.java"],
 
@@ -27,6 +27,10 @@ android_app {
     overrides: ["Provision"],
 
     optimize: {
+        enabled: true,
+        optimize: true,
+        shrink: true,
+        obfuscate: true,
         proguard_flags_files: ["proguard.flags"],
     },
 
